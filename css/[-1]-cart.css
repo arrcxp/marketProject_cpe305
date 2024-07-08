@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --black: #252525;
+    --blue: #365798;
+    --skyblue: #a7b7d8;
+    --white: #E9E0E0;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Kanit";
+}
+
+#background{ background: var(--white);}
+header{ background: var(--blue); }
+
+header h1, #link-nav a{ 
+    color: var(--white);
+    transition: all .3s ease-in-out; 
+}
+
+#link-nav a:hover{ 
+    color: var(--skyblue);
+    text-decoration: underline !important; 
+}
+
+article{
+    background: var(--blue);
+    color: var(--white);
+    padding: 25px 50px;
+    border-radius: 24px;
+}
+
+table{
+    color: var(--blue);
+    font-size: 24px;
+    padding: 16px;
+}
+
+th{ padding: 16px; }
+#tr-head{ 
+    background: var(--blue) !important;
+    color: var(--white) !important;
+}
+tr:nth-child(even){ 
+    background: var(--skyblue);}
+    
+tr:nth-child(odd){ 
+    background: var(--white);}
+
+.back a, .clearCart input{ 
+    color: var(--blue);
+    background: none;
+    border: none;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+    transition: all .3s ease-in-out;
+}
+
+.back a:hover, .clearCart input:hover{ 
+    color: var(--skyblue); 
+    text-decoration: underline;
+}

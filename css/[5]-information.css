@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --black: #252525;
+    --blue: #365798;
+    --skyblue: #a7b7d8;
+    --white: #E9E0E0;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Kanit";
+}
+
+#background{ 
+    background: var(--white); 
+    overflow: hidden;
+    height: 100vh;
+}
+
+section h1{ color: var(--blue); }
+button{
+    width: 250px;
+    padding: 16px;
+    font-weight: bold;
+    color: var(--blue) !important;
+    background: var(--skyblue);
+    border: solid var(--skyblue);
+    margin: 16px !important;
+    transition: all .3s ease-in-out;
+}
+
+button:hover{
+    color: var(--skyblue);
+    background: var(--blue);
+    border: solid var(--blue);
+}
+
+a{
+    color: var(--blue) !important;
+    font-size: 24px;
+    text-decoration: none !important;
+    transition: color .3s ease-in-out;
+}
+
+a:hover{
+    color: var(--skyblue) !important;
+}

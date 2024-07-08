@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --black: #252525;
+    --blue: #365798;
+    --skyblue: #a7b7d8;
+    --white: #E9E0E0;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Kanit";
+}
+
+#background{ background: var(--white); overflow: hidden;}
+header{ background: var(--blue); }
+
+header h1, #link-nav a{ 
+    color: var(--white);
+    transition: all .3s ease-in-out; 
+}
+
+#link-nav a:hover{ 
+    color: var(--skyblue);
+    text-decoration: underline !important; 
+}
+
+table {
+    position: absolute;
+    left: 10%;
+    border-collapse: collapse;
+    width: 80%;
+    padding: 20px;
+    color: var(--blue);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: left;
+    margin-top: 16px !important;
+}
+th {
+    background-color: var(--blue) !important;
+    padding: 20px;
+    color: var(--skyblue) !important;
+}
+tr:nth-child(even) {
+    background-color: var(--skyblue);
+    color: var(--blue) !important;
+}
+td {
+    padding: 20px;
+}
+
+footer a, #line-span{
+    color: var(--blue);
+    font-size: 24px;
+    text-decoration: none;
+    transition: color .3s ease-in-out;
+}
+
+footer a:hover{
+    color: var(--skyblue);
+}

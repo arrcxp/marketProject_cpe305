@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --black: #252525;
+    --blue: #365798;
+    --skyblue: #a7b7d8;
+    --white: #E9E0E0;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Kanit";
+}
+
+#background{ background: var(--white); overflow: hidden;}
+header{ background: var(--blue); }
+
+header h1, #link-nav a{ 
+    color: var(--white);
+    transition: all .3s ease-in-out; 
+}
+
+#link-nav a:hover{ 
+    color: var(--skyblue);
+    text-decoration: underline !important; 
+}
+
+#content{
+    width: 101%;
+    height: 100%;
+}
+
+#search label, #search label::after{
+    content: ' ★';
+    color: var(--blue);
+    font-weight: bold;
+    font-size: 24px;
+}
+
+#search input{
+    width: 400px;
+    padding: 10px;
+    border: solid var(--blue);
+    background: var(--blue);
+    outline: none;
+    color: var(--white);
+}
+
+#search input:nth-child(even){
+    width: 100px;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+#search input::placeholder{ 
+    color: var(--white);
+    font-size: 20px; 
+} 
+
+article, article a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+    background: var(--blue);
+    text-decoration: none;
+    transition: background .3s ease-in-out;
+}
+
+article a{ background: none !important;}
+
+article:hover, article a:hover{
+    background: var(--skyblue);
+}
+
+article img{
+    width: 80%;
+    margin-bottom: 20px;
+    transition: width .3s ease-in-out;
+}
+
+article img:hover{
+    width: 90%;
+}
